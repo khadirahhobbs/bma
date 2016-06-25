@@ -1,0 +1,5 @@
+RED: rgb(219,57,63)
+BLACK: rgb(4,4,4)
+GRAY: rgb (18,18,18)
+
+FONT: Arial, Helvetica, sans-serif
