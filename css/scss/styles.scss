@@ -1,0 +1,19 @@
+// Fonts
+
+// Variables
+
+$accentColor: #727171;
+
+
+// Mixins
+
+@mixin border-style($accentColor: #727171) {
+
+	border-top-width: 1px;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-top-color: $accentColor;
+    border-bottom-color: $accentColor;
+    border-bottom-width: 1px;
+} 
+
