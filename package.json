@@ -1,5 +1,5 @@
 {
-  "name": "bma-media-group",
+  "name": "bma",
   "version": "1.0.0",
   "description": "re-coded and slightly re-designed website for BMA",
   "main": "index.js",

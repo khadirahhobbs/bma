@@ -10,10 +10,93 @@ $accentColor: #727171;
 @mixin border-style($accentColor: #727171) {
 
 	border-top-width: 1px;
-    border-top-style: dotted;
-    border-bottom-style: dotted;
-    border-top-color: $accentColor;
-    border-bottom-color: $accentColor;
-    border-bottom-width: 1px;
+   border-top-style: dotted;
+   border-bottom-style: dotted;
+   border-top-color: $accentColor;
+   border-bottom-color: $accentColor;
+   border-bottom-width: 1px;
 } 
+
+*, html {
+	margin: 0;
+	
+}
+
+body {
+	font-family: 'Open Sans Condensed', Arial, sans-serif;
+	font-size: 20px;
+	background-color: rgb(4,4,4);
+	color: #fff;
+	margin: 0 auto;
+	max-width: 1024px;
+	padding-top: 20px;
+}
+
+a {
+
+	&:link {
+		color: #fff; 
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: #fff;
+	}
+
+	&:hover {
+		color: rgb(219,57,63);
+	}
+
+}
+
+img {
+	width: 100%;
+	
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		line-height: 1em;
+		padding: 0 20px;
+		font-size: 25px;
+	 
+		&:nth-child(5) {
+			padding: 0;
+		
+		}
+	
+		&:first-child {
+			padding: 0;
+		}
+	}
+}
+
+header {
+	display: flex;
+	padding-top: 20px;
+	
+	img {
+		justify-content: center;
+		
+	}
+}
+
+main {
+	padding-top: 20px;
+
+}
+
+#portfolio_row {
+	@include border-style();
+	
+	
+
+}
 

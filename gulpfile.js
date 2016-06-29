@@ -19,7 +19,10 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
     return gulp.src('scss/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('css'));
+        .pipe(rename('all.min.css'))
+        .pipe(uglify())
+        .pipe(gulp.dest('css/min'));
 });
 
 // Concatenate & Minify JS
