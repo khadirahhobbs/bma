@@ -7,15 +7,16 @@ $accentColor: #727171;
 
 // Mixins
 
-@mixin border-style($accentColor: #727171) {
+@mixin borderStyle($accentColor:#727171) {
 
-	border-top-width: 1px;
+	border-top-width: 2px;
    border-top-style: dotted;
    border-bottom-style: dotted;
    border-top-color: $accentColor;
    border-bottom-color: $accentColor;
-   border-bottom-width: 1px;
+   border-bottom-width: 2px;
 } 
+
 
 *, html {
 	margin: 0;
@@ -89,14 +90,55 @@ header {
 }
 
 main {
-	padding-top: 20px;
+	padding-top: 10px;
 
 }
 
 #portfolio_row {
-	@include border-style();
 	
+	.col-1-3 {
+		@include borderStyle($accentColor);
+	padding: 10px 0;
+		
+		
+	}
 	
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 
 }
+
+footer {
+
+	clear: both;
+	background-color: #888;
+	
+	ul {
+
+
+	}
+
+	li {
+		font-size: 18px;
+		list-style: none;
+
+			&:first-child {
+				font-weight: bold;
+
+			}
+
+			a {
+				&:hover {
+					color: #fff;
+				}
+			}
+	
+	}
+
+}	
+
 
